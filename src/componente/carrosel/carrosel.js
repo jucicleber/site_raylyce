@@ -1,7 +1,7 @@
 import React from "react";
-import broches from "../carrosel/broches.JPG";
-import chaveiro from "../carrosel/chaveiro.JPG";
-import placa from "../carrosel/placa.JPG";
+import broches from "../img/carrosel/broches.JPG";
+import chaveiro from "../img/carrosel/chaveiro.JPG";
+import placa from "../img/carrosel/placa.JPG";
 import "../app.css";
 
 const Carousel = () => {

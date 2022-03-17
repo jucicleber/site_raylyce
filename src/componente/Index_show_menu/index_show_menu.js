@@ -1,12 +1,12 @@
 import React from "react";
 import "../app.css";
-import logo from "./logo.JPG";
+import logo from "../img/index_show_menu/logo-crop.JPG";
 import eventService from "../../eventservice";
 
 const Navbar = (props) => {
   return (
     <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container-fluid" id="cor_de_fundo">
         <img
           onClick={() => {
             props.navigationC(true);
@@ -30,9 +30,9 @@ const Navbar = (props) => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item ">
               <button
-                class="btn btn-outline-primary me-5 buttons"
+                class="btn btn-outline-primary me-5 buttons rounded-pill  nav-item "
                 aria-current="page"
                 // onClick={() => eventService.callback("exibirProdutos")}
                 onClick={() => {
@@ -47,7 +47,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-danger me-5 buttons"
+                class="btn btn-outline-danger me-5 buttons rounded-pill nav-item"
                 // onClick={() => eventService.callback("exibirAdministrativo")}
                 onClick={() => {
                   props.navigationP(false);
@@ -60,7 +60,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-warning me-5 buttons"
+                class="btn btn-outline-warning me-5 buttons rounded-pill nav-item "
                 //onClick={() => eventService.callback("exibirRastreio")}
                 onClick={() => {
                   props.navigationP(false);
@@ -74,7 +74,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-info me-5 buttons"
+                class="btn btn-outline-info me-5 buttons rounded-pill nav-item"
                 onClick={() => eventService.callback("exibirFaleConosco")}
               >
                 Fale Conosco
@@ -82,7 +82,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn-outline-success buttons"
+                class="btn-outline-success buttons rounded-pill nav-item"
                 onClick={() => eventService.callback("exibirPedido")}
               >
                 Pedido
