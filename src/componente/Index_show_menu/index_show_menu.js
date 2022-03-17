@@ -32,8 +32,7 @@ const Navbar = (props) => {
           <ul class="navbar-nav">
             <li class="nav-item ">
               <button
-                class="btn btn-outline-primary me-5 buttons rounded-pill  nav-item "
-                aria-current="page"
+                className="btn btn-outline-primary fs-1 me-5 rounded-pill"
                 // onClick={() => eventService.callback("exibirProdutos")}
                 onClick={() => {
                   props.navigationP(true);
@@ -47,7 +46,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-danger me-5 buttons rounded-pill nav-item"
+                class="btn btn-outline-danger fs-1 me-5 rounded-pill"
                 // onClick={() => eventService.callback("exibirAdministrativo")}
                 onClick={() => {
                   props.navigationP(false);
@@ -60,7 +59,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-warning me-5 buttons rounded-pill nav-item "
+                class="btn btn-outline-warning fs-1 me-5 rounded-pill "
                 //onClick={() => eventService.callback("exibirRastreio")}
                 onClick={() => {
                   props.navigationP(false);
@@ -74,7 +73,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn btn-outline-info me-5 buttons rounded-pill nav-item"
+                class="btn btn-outline-info fs-1 me-5 rounded-pill"
                 onClick={() => eventService.callback("exibirFaleConosco")}
               >
                 Fale Conosco
@@ -82,7 +81,7 @@ const Navbar = (props) => {
             </li>
             <li class="nav-item">
               <button
-                class="btn-outline-success buttons rounded-pill nav-item"
+                class="btn btn-outline-success fs-1 me-5 rounded-pill"
                 onClick={() => eventService.callback("exibirPedido")}
               >
                 Pedido
