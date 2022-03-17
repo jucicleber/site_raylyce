@@ -1,0 +1,8 @@
+{
+  "produtos": [
+    { "nome": "Chiquinha aplique acrilico", "price": 4.9, "quantidade": "10" },
+    { "nome": "Coelho com oculos", "price": 3.8, "quantidade": "10" },
+    { "nome": "Ursinho com balao", "price": 4.9, "quantidade": "10" },
+    { "nome": "Balão aplique acrilico", "price": 4.9, "quantidade": "10" }
+  ]
+}
