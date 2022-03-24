@@ -12,7 +12,7 @@ const RegisterProduct = () => {
           <p class="card-text">
             <h4>
               Aqui voce pode Inserir um Produto no Estoque, Editar um produto já
-              existente no Estoque e ainda Exclluir alguma produto que possa ter
+              existente no Estoque e ainda Excluir alguma produto que possa ter
               deixado de fabricar.
             </h4>
           </p>

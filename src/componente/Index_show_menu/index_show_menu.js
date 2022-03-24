@@ -30,7 +30,11 @@ const Navbar = (props) => {
           <a href="https://www.facebook.com/search/top?q=raylyce">
             <i className="bi bi-facebook fs-1 text-primary"></i>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=65996937009&text=Ola!">
+          <a
+            href="https://api.whatsapp.com/send?phone=5565996937009!"
+            id="action-button"
+            img={logo}
+          >
             <i className="bi bi-whatsapp fs-1 text-success"></i>
           </a>
         </div>
