@@ -3,7 +3,7 @@ import React from "react";
 const Rastreio = () => {
   return (
     <div>
-      <p>Serve para restrear produtos comprados na loja....</p>
+      <h1>Rastreio</h1>
     </div>
   );
 };

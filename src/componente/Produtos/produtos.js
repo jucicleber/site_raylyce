@@ -33,7 +33,7 @@ const Produto = (props) => {
 //row
 const Produtos = () => {
   return (
-    <div className="row justify-content-center aligin-items-center">
+    <div className="row g-0 justify-content-center aligin-items-center">
       {catalogo.produtos.map((prod) => (
         <Produto produto={prod} />
       ))}
