@@ -32,7 +32,7 @@ const Produtos = () => {
          <input
               type="search"
               className="form-control"
-              placeholder="Procurar Produto."
+              placeholder="Procurar Produto"
               aria-label="Search"
     ></input>
         {catalogo.produtos.map((prod) => (

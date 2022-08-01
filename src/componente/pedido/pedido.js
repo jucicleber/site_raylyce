@@ -1,4 +1,5 @@
 import React from "react";
+import InputMask from "react-input-mask";
 
 const Pedido = () => {
   return (
@@ -26,11 +27,12 @@ const Pedido = () => {
           />
         </div>
         <h3>Digite seu número de telefone.</h3>
-        <input
-          type="phone"
-          className="col-3 form-control"
+        <InputMask
+          mask="(99)99999-9999"
+          type="text"
           placeholder="Digite seu número de telefone."
-        ></input>
+          className="form-control"
+        />
         <h3>
           Desejar carregar alguma imagem para ilustrar seu pedido se sim abra
           aqui.
