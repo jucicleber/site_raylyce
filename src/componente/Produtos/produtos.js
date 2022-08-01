@@ -5,7 +5,9 @@ const Produto = (props) => {
   let imagem = props.produto.imagem;
   console.log(imagem);
   return (
-    <div className="card p-4 m-2" id="cardProduto">
+    
+    <div className="card g-5 m-3" id="cardProduto">
+      
       <img
         src={props.produto.imagem}
         className="card-img-top"
@@ -17,16 +19,28 @@ const Produto = (props) => {
           <h2> {props.produto.price}</h2>
         </p>
       </div>
-    </div>
+      </div>
   );
 };
 const Produtos = () => {
+  <div className="">
+      
+  </div>
   return (
-    <div className="row g-0 justify-content-center aligin-items-center">
-      {catalogo.produtos.map((prod) => (
-        <Produto produto={prod} />
-      ))}
-    </div>
+    <div className="d-flex justify-content-center aligin-items-center">
+      <div className="row col-9">
+         <input
+              type="search"
+              className="form-control"
+              placeholder="Procurar Produto."
+              aria-label="Search"
+    ></input>
+        {catalogo.produtos.map((prod) => (
+          <Produto produto={prod} />
+        ))}
+      </div>
+      </div>
+  
   );
 };
 

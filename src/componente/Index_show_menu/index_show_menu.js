@@ -81,7 +81,7 @@ const Navbar = (props) => {
                     props.navigationPedido(false);
                   }}
                 >
-                  Administrativo
+                  Login
                 </button>
               </li>
               <li className="nav-item">

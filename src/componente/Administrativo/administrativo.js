@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import RegisterProduct from "./registerProduct";
 
+
+//Aqui em administrativo a senha é somente "a" em login e clica no botão (enviar).
 const Administrativo = (props) => {
   const [administrativo, setAdminstrativo] = useState(true);
   return (
