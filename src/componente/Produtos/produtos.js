@@ -5,16 +5,6 @@ const Produto = (props) => {
   let imagem = props.produto.imagem;
   console.log(imagem);
   return (
-    // <div className="container card m-3" style={{ width: 350, height: 350 }}>
-    //   <h3>{props.produto.nome}</h3>
-    //   <h3>{props.produto.price}</h3>
-    //   <img
-    //     src={props.produto.imagem}
-    //     style={{ width: 250, height: 250 }}
-    //     alt="imagem do produto"
-    //   />
-    // </div>
-
     <div className="card p-4 m-2" id="cardProduto">
       <img
         src={props.produto.imagem}
@@ -30,7 +20,6 @@ const Produto = (props) => {
     </div>
   );
 };
-//row
 const Produtos = () => {
   return (
     <div className="row g-0 justify-content-center aligin-items-center">

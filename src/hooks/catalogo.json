@@ -2,25 +2,49 @@
   "produtos": [
     {
       "nome": "Chiquinha aplique acrilico",
-      "price": "4.90 R$",
+      "price": "4.90 R$ a unidade",
       "quantidade": "10",
       "imagem": "https://i.imgur.com/0tlvhua.jpg"
     },
     {
       "nome": "Coelho com oculos",
-      "price": "3.80 R$",
+      "price": "3.80 R$ a unidade",
       "quantidade": "10",
       "imagem": "https://i.imgur.com/Syglkl5.jpg"
     },
     {
       "nome": "Ursinho com balao",
-      "price": "4.90 R$",
+      "price": "4.90 R$ a unidade",
       "quantidade": "10",
       "imagem": "https://i.imgur.com/YglsadY.jpg"
     },
     {
       "nome": "Balão aplique acrilico",
-      "price": "4.90 R$",
+      "price": "4.90 R$ a unidade",
+      "quantidade": "10",
+      "imagem": "https://i.imgur.com/RFYY9AQ.jpg"
+    },
+    {
+      "nome": "Chiquinha aplique acrilico",
+      "price": "4.90 R$ a unidade",
+      "quantidade": "10",
+      "imagem": "https://i.imgur.com/0tlvhua.jpg"
+    },
+    {
+      "nome": "Coelho com oculos",
+      "price": "3.80 R$ a unidade",
+      "quantidade": "10",
+      "imagem": "https://i.imgur.com/Syglkl5.jpg"
+    },
+    {
+      "nome": "Ursinho com balao",
+      "price": "4.90 R$ a unidade",
+      "quantidade": "10",
+      "imagem": "https://i.imgur.com/YglsadY.jpg"
+    },
+    {
+      "nome": "Balão aplique acrilico",
+      "price": "4.90 R$ a unidade",
       "quantidade": "10",
       "imagem": "https://i.imgur.com/RFYY9AQ.jpg"
     }
