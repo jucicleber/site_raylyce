@@ -2,7 +2,7 @@ import React from "react";
 
 const Rastreio = () => {
   return (
-    <div className="container ng-0">
+    <div className="container">
       <div className="card">
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
@@ -28,6 +28,30 @@ const Rastreio = () => {
                 type="button"
               >
                 Rastreio Correios Transportes
+              </button>
+            </a>
+             <a href="https://www.carvalima.com.br/rastreamento">
+              <button
+                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
+                type="button"
+              >
+                Cotação Carvalima Transportes
+              </button>
+            </a>
+            <a href="https://www.carvalima.com.br/cotacao">
+              <button
+                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
+                type="button"
+              >
+                Cotação Brasspress Transportes
+              </button>
+            </a>
+            <a href="https://rastreamento.correios.com.br/app/index.php">
+              <button
+                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
+                type="button"
+              >
+                Cotação Correios Transportes
               </button>
             </a>
           </form>
