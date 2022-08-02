@@ -34,7 +34,17 @@ const Produtos = () => {
               className="form-control"
               placeholder="Procurar Produto"
               aria-label="Search"
-    ></input>
+        ></input>
+        <div className="row">
+          
+           <button
+            className="btn btn-primary btn-lg col-md-3 offset-md-4 mt-5"
+            type="submit"
+          >
+            Pesquisar
+          </button>
+        </div>
+       
         {catalogo.produtos.map((prod) => (
           <Produto produto={prod} />
         ))}
