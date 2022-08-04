@@ -123,6 +123,7 @@ const Navbar = (props) => {
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(true);
                     props.navigationPedido(false);
+                    
                   }}
                 >
                   Fale Conosco
@@ -138,11 +139,13 @@ const Navbar = (props) => {
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(false);
                     props.navigationPedido(true);
+                    
                   }}
                 >
                   Pedido
                 </button>
               </li>
+              
             </ul>
           </div>
         </div>

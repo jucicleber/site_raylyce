@@ -46,7 +46,7 @@ const Produtos = () => {
         </div>
        
         {catalogo.produtos.map((prod) => (
-          <Produto produto={prod} />
+          <Produto produto={prod}  onclick=""/>
         ))}
       </div>
       </div>
