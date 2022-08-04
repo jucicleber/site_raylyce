@@ -34,7 +34,7 @@ const Administrativo = (props) => {
 
           <div className="checkbox mb-3"></div>
           <button
-            className="offset-1 btn btn-lg btn-outline-danger me-5 px-5"
+            className="offset-1 btn btn-lg btn-outline-danger me-5 px-5 mb-5"
             type="submit"
             onClick={() => {
               setAdminstrativo(false);
@@ -42,7 +42,7 @@ const Administrativo = (props) => {
           >
             Enviar
           </button>
-         <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5">Fazer Cadastro</button>
+         <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5">Fazer Cadastro</button>
         </form>
       ) : (
         <RegisterProduct />
@@ -52,3 +52,5 @@ const Administrativo = (props) => {
 };
 
 export default Administrativo;
+
+

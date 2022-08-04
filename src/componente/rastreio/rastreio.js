@@ -6,54 +6,23 @@ const Rastreio = () => {
       <div className="card">
         <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
-            <a href="https://www.carvalima.com.br/rastreamento">
-              <button
-                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
-                type="button"
-              >
-                Rastreio Carvalima Transportes
-              </button>
-            </a>
-            <a href="https://www.braspress.com/rastreie-sua-encomenda/">
-              <button
-                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
-                type="button"
-              >
-                Rastreio Brasspress Transportes
-              </button>
-            </a>
+            
             <a href="https://rastreamento.correios.com.br/app/index.php">
               <button
                 class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
                 type="button"
               >
-                Rastreio Correios Transportes
+                Rastreio Correios
               </button>
             </a>
-             <a href="https://www.carvalima.com.br/rastreamento">
+            <a href="https://www.azulcargoexpress.com.br/Rastreio/Rastreio">
               <button
                 class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
                 type="button"
               >
-                Cotação Carvalima Transportes
+                Rastreio Azul Cargo
               </button>
-            </a>
-            <a href="https://www.carvalima.com.br/cotacao">
-              <button
-                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
-                type="button"
-              >
-                Cotação Brasspress Transportes
-              </button>
-            </a>
-            <a href="https://rastreamento.correios.com.br/app/index.php">
-              <button
-                class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
-                type="button"
-              >
-                Cotação Correios Transportes
-              </button>
-            </a>
+            </a>  
           </form>
         </nav>
       </div>
@@ -72,7 +41,7 @@ const Rastreio = () => {
             class="btn btn-outline-warning btn-lg fs-1 me-1 rounded-pill"
             type="button"
           >
-            Rastreio encomenda
+            Rastrear encomenda/Pedido
           </button>
         </div>
       </div>
