@@ -1,12 +1,14 @@
 import React from "react";
+import appView from "../../AppView";
 import catalogo from "../../hooks/catalogo.json";
 
 const Produto = (props) => {
   let imagem = props.produto.imagem;
+
   console.log(imagem);
   return (
     
-    <div className="card g-5 m-3" id="cardProduto">
+    <div className="card g-5 m-3" id="cardProduto" onClick={() => appView.clickProduto(props.produto)}>
       
       <img
         src={props.produto.imagem}
@@ -22,7 +24,7 @@ const Produto = (props) => {
       </div>
   );
 };
-const Produtos = () => {
+const Produtos = (props) => {
   <div className="">
       
   </div>
@@ -46,7 +48,7 @@ const Produtos = () => {
         </div>
        
         {catalogo.produtos.map((prod) => (
-          <Produto produto={prod}  onclick=""/>
+          <Produto produto={prod} />
         ))}
       </div>
       </div>

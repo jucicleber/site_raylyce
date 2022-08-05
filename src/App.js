@@ -7,6 +7,9 @@ import Administrativo from "./componente/Administrativo/administrativo";
 import Rastreio from "./componente/rastreio/rastreio";
 import FaleConosco from "./componente/faleConosco/faleConosco";
 import Pedido from "./componente/pedido/pedido";
+import appView from "./AppView";
+import Vendas from "./componente/Produtos/vendas";
+
 
 function App() {
   const [navigationCarrosel, setNavigationC] = useState(true);
@@ -15,6 +18,23 @@ function App() {
   const [navigationRastreio, setNavigationR] = useState(false);
   const [navigationFaleConosco, setNavigationF] = useState(false);
   const [navigationPedido, setNavigationPE] = useState(false);
+  const [AdicionarVenda, setAdicionarVenda] = useState(false)
+
+  let limparTela = () => {
+    setNavigationC(false);
+    setNavigationP(false);
+    setNavigationA(false);
+    setNavigationR(false);
+    setNavigationF(false);
+    setNavigationPE(false);
+    setAdicionarVenda(false);
+  }
+
+  appView.clickProduto = (produto) => {
+    appView.produto = produto;
+    limparTela();
+    setAdicionarVenda(true);
+  };
 
   return (
     <div>
@@ -28,6 +48,7 @@ function App() {
       />
       {navigationCarrosel && <Carousel />}
       {navigationProduto && <Produtos />}
+      {AdicionarVenda && <Vendas />}
       {navigationAdmministrativo && (
         <div className="card d-flex align-items-center justify-content-center">
           <Administrativo />
