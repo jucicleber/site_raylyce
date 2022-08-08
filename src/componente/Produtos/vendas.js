@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import appView from "../../AppView";
+// import { useState } from "react";
 
 
 
 const Vendas = (props) => {
     const [AdicionarVenda, setAdicionarVenda] = useState(true)
+
+ const [numero, setNumero] = useState(0)
+        function aumentar() {
+            setNumero((prevState) => prevState + 1)
+        }
+        function diminuir(){
+            setNumero((prevState) => prevState - 1)
+        }
 
     return (
         <div className="card offset-3 col-6 justify-content-center ">
@@ -39,10 +48,11 @@ const Vendas = (props) => {
             <div className="offset-6 col-6 d-flex justify-content-center ">
                 <h1 className="card-title mb-5">Quantidade: </h1> 
                 <div className="col-4">
-            <div className="d-flex justify-content-between align-items-center border border-1 rounded-pill">
-                <i className="bi bi-dash-lg fs-5 btn"></i>
-                <span>0</span>
-                <i className="bi bi-plus-lg fs-5 btn"></i>
+                    <div className="d-flex justify-content-between align-items-center border border-1 rounded-pill">
+                       
+                <i className="bi bi-dash-lg fs-5 btn" onClick={diminuir}></i>
+                        <span id="numero">{numero}</span>
+                <i className="bi bi-plus-lg fs-5 btn"onClick={aumentar}></i>
                     </div>
                 
                 </div>
