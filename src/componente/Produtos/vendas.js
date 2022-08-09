@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import appView from "../../AppView";
-// import { useState } from "react";
+
 
 
 
 const Vendas = (props) => {
-    const [AdicionarVenda, setAdicionarVenda] = useState(true)
+   
 
  const [numero, setNumero] = useState(0)
         function aumentar() {
             setNumero((prevState) => prevState + 1)
         }
-        function diminuir(){
+    function diminuir() {
+        if (numero > 0) {
             setNumero((prevState) => prevState - 1)
         }
+};
 
     return (
         <div className="card offset-3 col-6 justify-content-center ">
@@ -62,7 +64,7 @@ const Vendas = (props) => {
                 <h1 className="card-title">Descrição: O produto mede 4cm quadrado, é feito de acrilico e sera embalado para não haver danos.</h1>
             </div>
             <div>
-                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5">Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5" onClick={() => appView.clickCarrinho(props.carrinho)}>Adicionar ao Carrinho</button>
             </div>
             </div>
         

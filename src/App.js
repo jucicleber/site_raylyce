@@ -9,6 +9,7 @@ import FaleConosco from "./componente/faleConosco/faleConosco";
 import Pedido from "./componente/pedido/pedido";
 import appView from "./AppView";
 import Vendas from "./componente/Produtos/vendas";
+import PosVendas from "./componente/Produtos/PosVendas";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
   const [navigationRastreio, setNavigationR] = useState(false);
   const [navigationFaleConosco, setNavigationF] = useState(false);
   const [navigationPedido, setNavigationPE] = useState(false);
-  const [AdicionarVenda, setAdicionarVenda] = useState(false)
+  const [AdicionarVenda, setAdicionarVenda] = useState(false);
+  const [navPosVendas, setNavPosVendas] = useState(false);
 
   let limparTela = () => {
     setNavigationC(false);
@@ -28,12 +30,18 @@ function App() {
     setNavigationF(false);
     setNavigationPE(false);
     setAdicionarVenda(false);
+    setNavPosVendas(false);
   }
 
   appView.clickProduto = (produto) => {
     appView.produto = produto;
     limparTela();
     setAdicionarVenda(true);
+  };
+  appView.clickCarrinho = (carrinho) => {
+    appView.carrinho = carrinho;
+    limparTela();
+    setNavPosVendas(true);
   };
 
   return (
@@ -46,9 +54,10 @@ function App() {
         navigationFaleConosco={setNavigationF}
         navigationPedido={setNavigationPE}
       />
-      {navigationCarrosel && <Carousel />}
-      {navigationProduto && <Produtos />}
-      {AdicionarVenda && <Vendas />}
+      {navigationCarrosel && (<Carousel />)}
+      {navigationProduto && (<Produtos />)}
+      {AdicionarVenda && (<Vendas />)}
+      {navPosVendas && (<PosVendas />)}
       {navigationAdmministrativo && (
         <div className="card d-flex align-items-center justify-content-center">
           <Administrativo />
