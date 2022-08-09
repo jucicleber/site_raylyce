@@ -38,6 +38,7 @@ const Vendas = (props) => {
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
                 <label class="form-check-label" for="flexCheckChecked">
                     Azul Cargo
+                
                 </label>
                 <div class="form-check offset-6">
                         <button type="button" className="btn btn-secondary mt-5 mb-5">Calcular Frete</button>
@@ -50,7 +51,7 @@ const Vendas = (props) => {
             <div className="offset-6 col-6 d-flex justify-content-center ">
                 <h1 className="card-title mb-5">Quantidade: </h1> 
                 <div className="col-4">
-                    <div className="d-flex justify-content-between align-items-center border border-1 rounded-pill">
+                    <div className="offset-4 d-flex align-items-center border border-3 rounded-pill">
                        
                 <i className="bi bi-dash-lg fs-5 btn" onClick={diminuir}></i>
                         <span id="numero">{numero}</span>
