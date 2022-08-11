@@ -34,7 +34,7 @@ function App() {
   }
 
   appView.clickProduto = (produto) => {
-    appView.produto = produto;
+    appView.novoItem = { produto, qtd: 1 };
     limparTela();
     setAdicionarVenda(true);
   };

@@ -5,15 +5,15 @@ import appView from "../../AppView";
 
 
 const Vendas = (props) => {
-   
-
- const [numero, setNumero] = useState(0)
-        function aumentar() {
-            setNumero((prevState) => prevState + 1)
+ const [numero, setNumero] = useState(appView.novoItem.qtd)
+    function aumentar() {
+        appView.novoItem.qtd += 1;
+            setNumero(appView.novoItem.qtd)
         }
     function diminuir() {
-        if (numero > 0) {
-            setNumero((prevState) => prevState - 1)
+        if (numero > 1) {
+            appView.novoItem.qtd -= 1;
+                setNumero(appView.novoItem.qtd)
         }
 };
 
@@ -21,11 +21,11 @@ const Vendas = (props) => {
         <div className="card offset-3 col-6 justify-content-center ">
             <div className="d-flex justify-content-center">
                 <div className="col-6 ">
-                <img src={appView.produto.imagem} className=" rounded float-left" width={200} alt="" />
+                <img src={appView.novoItem.produto.imagem} className=" rounded float-left" width={200} alt="" />
                 </div>
                 <div className="col-6 ">
-                <h1 className="card-title mb-5">{appView.produto.nome}</h1> 
-                <h1 className="card-title">{appView.produto.price}</h1>
+                <h1 className="card-title mb-5">{appView.novoItem.produto.nome}</h1> 
+                <h1 className="card-title">{appView.novoItem.produto.price}</h1>
                 </div>
             </div>  
             <div className="form-check offset-6 ">
@@ -53,16 +53,16 @@ const Vendas = (props) => {
                 <div className="col-4">
                     <div className="offset-4 d-flex align-items-center border border-3 rounded-pill">
                        
-                <i className="bi bi-dash-lg fs-5 btn" onClick={diminuir}></i>
+                <i className="bi bi-dash-lg fs-5 btn" onClick={() => diminuir()}></i>
                         <span id="numero">{numero}</span>
-                <i className="bi bi-plus-lg fs-5 btn"onClick={aumentar}></i>
+                <i className="bi bi-plus-lg fs-5 btn"onClick={() => aumentar()}></i>
                     </div>
                 
                 </div>
                 
             </div>
             <div>
-                <h1 className="card-title">Descrição: O produto mede 4cm quadrado, é feito de acrilico e sera embalado para não haver danos.</h1>
+                <h1>{appView.novoItem.produto.description}</h1>
             </div>
             <div>
                 <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5" onClick={() => appView.clickCarrinho(props.carrinho)}>Adicionar ao Carrinho</button>
