@@ -38,8 +38,11 @@ function App() {
     limparTela();
     setAdicionarVenda(true);
   };
-  appView.clickCarrinho = (carrinho) => {
-    appView.carrinho = carrinho;
+  appView.clickCarrinho = (item) => {
+    if (!appView.carrinho) {
+      appView.carrinho = [];
+    }
+    appView.carrinho.push(item);
     limparTela();
     setNavPosVendas(true);
   };

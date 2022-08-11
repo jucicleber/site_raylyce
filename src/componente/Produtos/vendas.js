@@ -65,7 +65,7 @@ const Vendas = (props) => {
                 <h1>{appView.novoItem.produto.description}</h1>
             </div>
             <div>
-                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5" onClick={() => appView.clickCarrinho(props.carrinho)}>Adicionar ao Carrinho</button>
+                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5" onClick={() => appView.clickCarrinho(appView.novoItem)}>Adicionar ao Carrinho</button>
             </div>
             </div>
         
