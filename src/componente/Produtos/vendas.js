@@ -25,7 +25,7 @@ const Vendas = (props) => {
                 </div>
                 <div className="col-6 ">
                 <h1 className="card-title mb-5">{appView.novoItem.produto.nome}</h1> 
-                <h1 className="card-title">{appView.novoItem.produto.price}</h1>
+                <h1 className="card-title">{appView.novoItem.produto.price} a unidade.</h1>
                 </div>
             </div>  
             <div className="form-check offset-6 ">
