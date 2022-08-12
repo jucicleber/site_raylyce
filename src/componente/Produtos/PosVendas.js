@@ -3,17 +3,20 @@ import appView from "../../AppView";
 
 function ItemCarrinho(props) {
     let item = props.item;
+    let total = 0
 
     
     const [numero, setNumero] = useState(item.qtd)
         function aumentar() {
             item.qtd += 1;
-                setNumero(item.qtd)
+            setNumero(item.qtd)
+            appView.calcularTotal()
             }
         function diminuir() {
             if (numero > 0) {
                 item.qtd -= 1;
                 setNumero(item.qtd)
+                appView.calcularTotal()
             }
     };
 
@@ -41,6 +44,15 @@ function ItemCarrinho(props) {
 
 const PosVendas = () => {
     
+    const [totalItens, setTotalItens] = useState(0)
+    appView.calcularTotal = () => {
+        let total = 0
+        appView.carrinho.forEach(item => {
+            total = item.produto.price * item.qtd
+        });
+        setTotalItens(total)
+    }
+
     return (
         <div className="card offset-3 col-6 justify-content-center container" >
             <div className="d-flex justify-content-start">
@@ -50,7 +62,7 @@ const PosVendas = () => {
             </div>
             <div className="d-flex justify-content-evenly align-items-center">
                 <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2">Fechar Pedido</button>
-                <h3 >Total ({ appView.carrinho.length } item(ns)): R$ 200,00</h3>
+                <h3 >Total ({ appView.carrinho.length } item(ns)): {totalItens}</h3>
         </div> 
             <hr />  
             {appView.carrinho.map((item, key) => (<ItemCarrinho key={key} item={item}></ItemCarrinho>) )}     
