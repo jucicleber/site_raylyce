@@ -25,41 +25,6 @@ const AdicionarProduto = () => {
         type="file"
         className="myFile mb-5" 
       ></input>
-      <h3 className="fs-1">Selecione o tipo do produto.</h3>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault1"
-        />
-        <label class="fs-4 form-check-label" for="flexRadioDefault1">
-          Chaveiro
-        </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault2"
-        />
-        <label class="fs-4 form-check-label" for="flexRadioDefault1">
-          Bonecos acrilicos.
-        </label>
-      </div>{" "}
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="flexRadioDefault3"
-        />
-        <label class="fs-4 form-check-label" for="flexRadioDefault1">
-          Missanguinhas
-        </label>
-      
-      </div>
       <button
         className="col-6 offset-3 btn btn-outline-primary me-5 px-5 mb-5 mt-5"
         align="center"
