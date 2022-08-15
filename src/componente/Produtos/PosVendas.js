@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import appView from "../../AppView";
 
+
+  
+
+
 function ItemCarrinho(props) {
     let item = props.item;
     
@@ -13,13 +17,14 @@ function ItemCarrinho(props) {
             appView.calcularTotal()
             }
         function diminuir() {
-            if (numero > 0) {
+            if (numero > 1) {
                 item.qtd -= 1;
                 setNumero(item.qtd)
                 appView.calcularTotal()
             }
     };
 
+    
 
     return(<div className="d-flex justify-content-center">
             <div className="col-6">   
@@ -34,8 +39,7 @@ function ItemCarrinho(props) {
         </div> 
     <div className="col-6">
         <h1 className="card-title mb-5">{item.produto.nome}</h1> 
-        <h2 className="card-title mb-3">Valor item: {item.produto.price} a unidade</h2>
-               
+        <h2 className="card-title mb-3">Valor item: {item.produto.price.toFixed(2)} R$ a unidade</h2>
             <button type="button" className="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2">Apagar item</button>
             <hr />  
         </div> 
@@ -56,6 +60,8 @@ const PosVendas = () => {
         });
         console.log('Total: ', total);
         setTotalItens(total)
+
+    
     }
 
     
