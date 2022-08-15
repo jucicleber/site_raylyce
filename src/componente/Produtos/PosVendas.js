@@ -35,7 +35,7 @@ function ItemCarrinho(props) {
     <div className="col-6">
         <h1 className="card-title mb-5">{item.produto.nome}</h1> 
         <h2 className="card-title mb-3">Valor item: {item.produto.price} a unidade</h2>
-                <h2 className="card-title">Valor do frete: 10.90 R$</h2>
+               
             <button type="button" className="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2">Apagar item</button>
             <hr />  
         </div> 

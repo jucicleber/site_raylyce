@@ -18,7 +18,7 @@ const Produto = (props) => {
       <div className="card-body">
         <h2 className="card-title">{props.produto.nome}</h2>
         <p className="card-text">
-          <h2> {props.produto.price}0 R$ A unidade</h2>
+          <h2> {props.produto.price.toFixed(2)} R$ A unidade</h2>
         </p>
       </div>
       </div>
