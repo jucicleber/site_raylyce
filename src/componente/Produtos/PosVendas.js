@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import appView from "../../AppView";
+import FecharPedido from "./fechar_pedido";
 
 
   
@@ -73,7 +74,7 @@ const PosVendas = () => {
                 <h1 className="offset-1 ">Marcar todos</h1>    
             </div>
             <div className="d-flex justify-content-evenly align-items-center">
-                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2">Fechar Pedido</button>
+                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2" >Fechar Pedido</button>
                 <h3 >Total ({appView.carrinho.length} item(ns)): {totalItens.toFixed(2)} R$.</h3>
         </div> 
             <hr/>  

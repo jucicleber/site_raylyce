@@ -46,6 +46,8 @@ function App() {
     limparTela();
     setNavPosVendas(true);
   };
+  
+  
 
   return (
     <div>

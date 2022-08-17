@@ -19,7 +19,6 @@ const Footer = () => {
           <h1 className="text-muted">Pagamentos</h1>
           <ul className="nav flex-column">
             <li className="nav-item mb-2 ">
-              <h3 className="col text-left">Pix</h3>
               <h3 className="col text-left mt-4">Boleto</h3>
               <h3 className="col text-left mt-4">Cartão de Crédito</h3>
               <h3 className="col text-left mt-4">Cartão de Débito</h3>
