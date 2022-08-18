@@ -4,7 +4,7 @@ function FecharPedido() {
     
 
     return (
-        <div className="card offset-3 col-6 justify-content-center ">
+        <div className="card offset-3 col-6 justify-content-center container">
             <div className="d-flex justify-content-center">
             <h3 className="offset-10">ok</h3>
             <hr />

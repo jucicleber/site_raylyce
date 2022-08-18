@@ -1,9 +1,5 @@
 import React, {useState} from "react";
 import appView from "../../AppView";
-import FecharPedido from "./fechar_pedido";
-
-
-  
 
 
 function ItemCarrinho(props) {
@@ -15,13 +11,13 @@ function ItemCarrinho(props) {
         function aumentar() {
             item.qtd += 1;
             setNumero(item.qtd)
-            appView.calcularTotal()
+            appView.atualizarTotal()
             }
         function diminuir() {
             if (numero > 1) {
                 item.qtd -= 1;
                 setNumero(item.qtd)
-                appView.calcularTotal()
+                appView.atualizarTotal()
             }
     };
 
@@ -51,20 +47,11 @@ function ItemCarrinho(props) {
 
 
 const PosVendas = () => {
-    
-    const [totalItens, setTotalItens] = useState(0)
-    appView.calcularTotal = () => {
-        console.log(appView.carrinho);
-        let total = 0
-        appView.carrinho.forEach(item => {
-            total += item.produto.price * item.qtd
-        });
-        console.log('Total: ', total);
-        setTotalItens(total)
+    const [totalItens, setTotalItens] = useState(appView.calcularTotal());
 
-    
+    appView.atualizarTotal = () => {
+        setTotalItens(appView.calcularTotal());
     }
-
     
     return (
         <div className="card offset-3 col-6 justify-content-center container" >
@@ -74,7 +61,7 @@ const PosVendas = () => {
                 <h1 className="offset-1 ">Marcar todos</h1>    
             </div>
             <div className="d-flex justify-content-evenly align-items-center">
-                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2" >Fechar Pedido</button>
+                <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2">Fechar Pedido</button>
                 <h3 >Total ({appView.carrinho.length} item(ns)): {totalItens.toFixed(2)} R$.</h3>
         </div> 
             <hr/>  

@@ -33,6 +33,15 @@ function App() {
     setNavPosVendas(false);
   }
 
+
+  appView.calcularTotal = () => {
+      let total = 0
+      appView.carrinho.forEach(item => {
+          total += item.produto.price * item.qtd
+      });
+      return total;
+  }
+  
   appView.clickProduto = (produto) => {
     appView.novoItem = { produto, qtd: 1 };
     limparTela();
