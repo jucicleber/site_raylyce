@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Navbar from "../src/componente/Index_show_menu/index_show_menu";
 import Carousel from "../src/componente/carrosel/carrosel";
 import Footer from "../src/componente/footer/footer";
-import Produtos from "./componente/Produtos/produtos";
+import Produtos from "./componente/Produtos/Produtos";
 import Administrativo from "./componente/Administrativo/administrativo";
 import Rastreio from "./componente/rastreio/rastreio";
 import FaleConosco from "./componente/faleConosco/faleConosco";
 import Pedido from "./componente/pedido/pedido";
 import appView from "./AppView";
-import Vendas from "./componente/Produtos/vendas";
+import Vendas from "./componente/Produtos/Vendas";
 import PosVendas from "./componente/Produtos/PosVendas";
+import FecharPedido from "./componente/Produtos/FecharPedido"  //chamando o componente FecharPedido
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   const [navigationPedido, setNavigationPE] = useState(false);
   const [AdicionarVenda, setAdicionarVenda] = useState(false);
   const [navPosVendas, setNavPosVendas] = useState(false);
+  const [navFecharPedido, setNavFecharPedido] = useState(false) //Inicaindo estado como falso FecharPedido
 
   let limparTela = () => {
     setNavigationC(false);
@@ -31,8 +33,13 @@ function App() {
     setNavigationPE(false);
     setAdicionarVenda(false);
     setNavPosVendas(false);
+    setNavFecharPedido(false) //Trazendo como flso em limpar tela.
   }
 
+  appView.fecharPedido = () => { //Chamando FecharPedido e limpando a tela
+    limparTela()
+    setNavFecharPedido(true)
+}
 
   appView.calcularTotal = () => {
       let total = 0
@@ -56,7 +63,9 @@ function App() {
     setNavPosVendas(true);
   };
   
+ 
   
+
 
   return (
     <div>
@@ -80,6 +89,7 @@ function App() {
       {navigationRastreio && <Rastreio />}
       {navigationFaleConosco && <FaleConosco />}
       {navigationPedido && <Pedido />}
+      {navFecharPedido && <FecharPedido />} 
       <Footer />
     </div>
   );

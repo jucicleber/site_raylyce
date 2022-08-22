@@ -6,6 +6,7 @@ import appView from "../../AppView";
 
 
 
+
 const Vendas = () => {
  const [numero, setNumero] = useState(appView.novoItem.qtd)
     function aumentar() {
