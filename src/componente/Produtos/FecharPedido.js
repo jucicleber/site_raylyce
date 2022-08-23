@@ -7,12 +7,14 @@ function FecharPedido() {
 
        
     return (
-        <div className="card offset-3 col-6 justify-content-center ">
-            <div className="container d-flex justify-content-center">
-                <h3 >Total item(ns) {appView.carrinho.length} no carrinho</h3>
-                <h3>Valor total: {appView.calcularTotal()}</h3>
-                <hr/>
-                <h1>Entrega</h1>
+    <div>
+        <div className="card offset-3 col-6 container d-flex text-right">
+            <h3>Total item({appView.carrinho.length} item(ns))</h3>
+            <h3>Valor Total: {appView.calcularTotal().toFixed(2)} R$</h3>
+        </div>
+        <div className="card offset-3 col-6 ">
+            <div className="container d-flex ">
+                    <h1 >Entrega</h1>
                 <h3>De acordo com sua localização cadastrada o melhor frete é via:</h3>  
                 <h4>Correios ou Motoboy</h4>
                 <h4>Endereço de entrega cadastrado:</h4>
@@ -20,6 +22,8 @@ function FecharPedido() {
                 <h3>Valor do frete:</h3>
                  </div>
         
+        
+        </div>
          <div className="card offset-3 col-6 justify-content-center ">
             <div className="container d-flex justify-content-center">
                 <h1>Pagamento</h1>

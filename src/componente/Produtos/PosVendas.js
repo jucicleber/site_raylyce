@@ -21,12 +21,13 @@ const PosVendas = () => {
             </div>
             <div className="d-flex justify-content-evenly align-items-center">
                 <button type="button" class="btn btn-secondary btn-lg offset-5 mb-5 mt-5 mr-2" onClick={() => appView.fecharPedido()}>Fechar Pedido</button>
-                <h3 >Total ({appView.carrinho.length} item(ns)): {totalItens.toFixed(2)} R$.</h3>
-        </div> 
+            </div> 
+            <h3 className="text-right">Total ({appView.carrinho.length} item(ns))</h3>
+                  <h3 className="text-right">Valor Total: {totalItens.toFixed(2)} R$.</h3>
             <hr/>  
             {appView.carrinho.map((item, key) => (<ItemCarrinho key={key} item={item}></ItemCarrinho>))} 
-            <h3 className="offset-10">Total ({appView.carrinho.length} item(ns)): {totalItens.toFixed(2)} R$.</h3>
-         
+            <h3 className="text-right">Total ({appView.carrinho.length} item(ns))</h3>
+            <h3 className="text-right">Valor Total: {totalItens.toFixed(2)} R$.</h3>
          
             
     
