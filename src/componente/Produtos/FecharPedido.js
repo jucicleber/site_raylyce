@@ -3,6 +3,8 @@ import appView from "../../AppView";
 import ItemCarrinho from "../Produtos/ItemCarrinho"
 
 
+
+
 function FecharPedido() {
 
        
@@ -12,27 +14,70 @@ function FecharPedido() {
             <h3>Total item({appView.carrinho.length} item(ns))</h3>
             <h3>Valor Total: {appView.calcularTotal().toFixed(2)} R$</h3>
         </div>
-        <div className="card offset-3 col-6 ">
-            <div className="container d-flex ">
-                    <h1 >Entrega</h1>
-                <h3>De acordo com sua localização cadastrada o melhor frete é via:</h3>  
-                <h4>Correios ou Motoboy</h4>
-                <h4>Endereço de entrega cadastrado:</h4>
-                <h3>Rua São Luiz 13, Centro-Sul, Várzea Grande, Mato Grosso, 78130334.</h3>
-                <h3>Valor do frete:</h3>
+        <div className="card offset-3 col-6 container d-flex ">
+           
+                <h1 className="mb-5 mt-5">Entrega</h1>
+                <h3 className="mb-5">De acordo com sua localização cadastrada o melhor frete é via:</h3>  
+                <h4 className="mb-5">Correios ou Motoboy</h4>
+                <h2 className="mb-5">Endereço de Entrega Cadastrado:</h2>
+                <h5 className="">Rua São Luiz 13, Centro-Sul,</h5>
+                <h5 className="mb-5"> Várzea Grande, Mato Grosso, 78130334.</h5>
+                <div className="d-flex">
+                    <div className="col-8">
+                    <h2 >Valor do Frete:</h2> 
+                    </div>
+                    <div className="col-4" >
+                    <h2 className="mb-5">15.00 R$</h2> 
+                    </div>
+                </div>
+                <div className="d-flex">
+                    <div className="col-8">
+                         <h2 >Valor do(s) produto(s):</h2>
+                    </div>
+                   <div className="col-4 mb-5">
+                         <h2 className="">{appView.calcularTotal().toFixed(2)} R$</h2>
+                   </div>
+                </div>
+                <div className="d-flex">
+                    <div className="col-8">
+                         <h2>Valor Total(Frete/Produto):</h2>
+                    </div>
+                   <div className="col-4">
+                        <h2 className="mb-5">50.00 R$</h2>
+                   </div> 
+                </div>
+                 
                  </div>
-        
-        
-        </div>
-         <div className="card offset-3 col-6 justify-content-center ">
-            <div className="container d-flex justify-content-center">
-                <h1>Pagamento</h1>
-                <h3>Cartão de Crédito</h3>
-                <h3>Cartão de Débito</h3>
-                <h3>Boleto</h3>
+         <div className="card offset-3 col-6 container">
+           
+                <h1 className="mb-5 mt-5">Pagamento</h1>
+                <div className="d-flex">
+                    <div className="col-4">
+                        <h3 className="mb-3">Cartão de Crédito</h3>
+                    </div>
+                    <div className="offset-4">
+                         <button className="btn btn-outline-warning fs-1 me-1 rounded-pill mb-3">Cartão de Crédito</button>
+                    </div>
+                </div>
+                <div className="d-flex">
+                    <div className="col-4">
+                        <h3 className="mb-3">Cartão de Débito</h3>
+                    </div>
+                    <div className="offset-4">
+                         <button className="btn btn-outline-primary fs-1 me-1 rounded-pill mb-3">Cartão de Débito</button>
+                    </div>
+                </div>
+                <div className="d-flex">
+                    <div className="col-4">
+                        <h3 className="mb-3">Boleto</h3>
+                    </div>
+                    <div className="offset-4">
+                        <button className="btn btn-outline-info fs-1 me-1 rounded-pill mb-5">Gerar Boleto</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+   
     )
 }
 
