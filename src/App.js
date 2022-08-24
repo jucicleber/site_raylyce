@@ -11,6 +11,7 @@ import appView from "./AppView";
 import Vendas from "./componente/Produtos/Vendas";
 import PosVendas from "./componente/Produtos/PosVendas";
 import FecharPedido from "./componente/Produtos/FecharPedido"  //chamando o componente FecharPedido
+import Boleto from "./componente/Pagamentos/Boleto"
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
   const [navigationPedido, setNavigationPE] = useState(false);
   const [AdicionarVenda, setAdicionarVenda] = useState(false);
   const [navPosVendas, setNavPosVendas] = useState(false);
-  const [navFecharPedido, setNavFecharPedido] = useState(false) //Inicaindo estado como falso FecharPedido
+  const [navFecharPedido, setNavFecharPedido] = useState(false); //Inicaindo estado como falso FecharPedido
+  const [navBoleto, setNavBoleto] = useState(false);
 
   let limparTela = () => {
     setNavigationC(false);
@@ -34,7 +36,13 @@ function App() {
     setAdicionarVenda(false);
     setNavPosVendas(false);
     setNavFecharPedido(false) //Trazendo como flso em limpar tela.
+    setNavBoleto(false)
   }
+
+  appView.Boleto = () => {
+    limparTela()
+    setNavBoleto(true)
+}
 
   appView.fecharPedido = () => { //Chamando FecharPedido e limpando a tela
     limparTela()
@@ -90,6 +98,7 @@ function App() {
       {navigationFaleConosco && <FaleConosco />}
       {navigationPedido && <Pedido />}
       {navFecharPedido && <FecharPedido />} 
+      {navBoleto && <Boleto />}
       <Footer />
     </div>
   );

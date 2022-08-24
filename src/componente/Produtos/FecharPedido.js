@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import appView from "../../AppView";
-import ItemCarrinho from "../Produtos/ItemCarrinho"
 
-
-
+// function CalculoFrete() {
+//     let total = 0
+//     frete = 15 //frete da cidade de Várzea Grande-MT
+//     let produto = calcularTotal()
+//     total += frete + produto
+//     return (
+//         total
+//     )
+// }
 
 function FecharPedido() {
-
-       
     return (
     <div>
         <div className="card offset-3 col-6 container d-flex text-right">
-            <h3>Total item({appView.carrinho.length} item(ns))</h3>
-            <h3>Valor Total: {appView.calcularTotal().toFixed(2)} R$</h3>
+            <h3>Total item(ns)({appView.carrinho.length} item(ns))</h3>
+            <h3>Valor do(s) produto(s): {appView.calcularTotal().toFixed(2)} R$</h3>
         </div>
         <div className="card offset-3 col-6 container d-flex ">
            
@@ -27,7 +31,7 @@ function FecharPedido() {
                     <h2 >Valor do Frete:</h2> 
                     </div>
                     <div className="col-4" >
-                    <h2 className="mb-5">15.00 R$</h2> 
+                    <h2 className="mb-5" id="frete">15.00 R$</h2> 
                     </div>
                 </div>
                 <div className="d-flex">
@@ -72,7 +76,7 @@ function FecharPedido() {
                         <h3 className="mb-3">Boleto</h3>
                     </div>
                     <div className="offset-4">
-                        <button className="btn btn-outline-info fs-1 me-1 rounded-pill mb-5">Gerar Boleto</button>
+                        <button className="btn btn-outline-info fs-1 me-1 rounded-pill mb-5" onClick={() => appView.Boleto()}>Gerar Boleto</button>
                     </div>
                 </div>
             </div>
