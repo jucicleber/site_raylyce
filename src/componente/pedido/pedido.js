@@ -1,5 +1,5 @@
 import React from "react";
-import InputMask from "react-input-mask";
+
 
 const Pedido = () => {
   return (
@@ -17,7 +17,7 @@ const Pedido = () => {
             className="col-8 form-control"
           ></textarea>
         </div>
-        <h3>Digite seu Email para entrarmos em contato.</h3>
+        <h3>Quantidade</h3>
         <div class="">
           <input
             type="email"
@@ -25,14 +25,7 @@ const Pedido = () => {
             id="floatingInput"
             placeholder="Digite seu Email."
           />
-        </div>
-        <h3>Digite seu número de telefone.</h3>
-        <InputMask
-          mask="(99)99999-9999"
-          type="text"
-          placeholder="Digite seu número de telefone."
-          className="form-control"
-        />
+        </div>   
         <h3>
           Desejar carregar alguma imagem para ilustrar seu pedido se sim abra
           aqui.

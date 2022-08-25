@@ -9,7 +9,10 @@ function Boleto() {
             <h2 className="mb-5"> Valor dos Produto(s) comprado(s).{appView.calcularTotal().toFixed(2)} R$</h2>
             <h2 className="mb-5">Valor Frete: 50.00 R$</h2>
             <h2 className="mb-5">Valor Total(Frete/Produto): 50.00 R$</h2>
-           <button className="btn btn-outline-info fs-1 me-1 rounded-pill mb-5 col-4">Dawnload do Boleto</button>
+            <div className="justify-content-center d-flex">
+                 <button className="btn btn-outline-info fs-1 me-1 rounded-pill mb-5 col-4 ">Dawnload do Boleto</button>
+            </div>
+          
         </div>
     )
 }

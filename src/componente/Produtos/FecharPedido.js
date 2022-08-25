@@ -68,7 +68,7 @@ function FecharPedido() {
                         <h3 className="mb-3">Cartão de Débito</h3>
                     </div>
                     <div className="offset-4">
-                         <button className="btn btn-outline-primary fs-1 me-1 rounded-pill mb-3">Cartão de Débito</button>
+                         <button className="btn btn-outline-primary fs-1 me-1 rounded-pill mb-3" onClick={() => appView.CartaoDebito()}>Cartão de Débito</button>
                     </div>
                 </div>
                 <div className="d-flex">
