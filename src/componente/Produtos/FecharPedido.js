@@ -1,15 +1,7 @@
 import React from "react";
 import appView from "../../AppView";
 
-// function CalculoFrete() {
-//     let total = 0
-//     frete = 15 //frete da cidade de Várzea Grande-MT
-//     let produto = calcularTotal()
-//     total += frete + produto
-//     return (
-//         total
-//     )
-// }
+
 
 function FecharPedido() {
     return (
