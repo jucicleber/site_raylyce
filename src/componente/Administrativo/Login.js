@@ -3,11 +3,12 @@ import RegisterProduct from "./registerProduct";
 
 
 
-const Administrativo = (props) => {
-  const [administrativo, setAdminstrativo] = useState(true);
+
+const Login = (props) => {
+  const [login, setLogin] = useState(true);
   return (
     <>
-      {administrativo ? (
+      {login ? (
         <form
           form
           className=" text-center col-6 justify-content-center align-items-center"
@@ -37,7 +38,8 @@ const Administrativo = (props) => {
             className="offset-1 btn btn-lg btn-outline-danger me-5 px-5 mb-5"
             type="submit"
             onClick={() => {
-              setAdminstrativo(false);
+              setLogin(false);
+              
             }}
           >
             Enviar
@@ -45,12 +47,14 @@ const Administrativo = (props) => {
          <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5">Fazer Cadastro</button>
         </form>
       ) : (
-        <RegisterProduct />
+          <RegisterProduct />
+         
       )}
+      
     </>
   );
 };
 
-export default Administrativo;
+export default Login;
 
 

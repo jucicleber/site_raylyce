@@ -29,7 +29,8 @@ const RegisterProduct = (props) => {
           </div>
        
       ) : (
-        <AdicionarProduto />
+          <AdicionarProduto />
+          
       )}
     </div>
   );

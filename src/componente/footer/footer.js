@@ -9,11 +9,10 @@ const Footer = () => {
           <h1 className="text-muted">Fale Conosco</h1>
           <h3 className="col text-left">(065) 99693-7009</h3>
           <h3 className="col text-left">(065) 99316-7473</h3>
-          <h3 className="col text-left mt-5">raylyceacessorios@hotmail.com</h3>
+          <h4 className="col-1 text-left mt-5">raylyceacessorios@hotmail.com</h4>
           <h4 className="col text-left mt-5">
             Atendimento nos telefones e email de Segunda a Sexta das 9h até as
-            18h.
-          </h4>
+            18h. </h4>
         </div>
         <div className="col text-center">
           <h1 className="text-muted">Pagamentos</h1>

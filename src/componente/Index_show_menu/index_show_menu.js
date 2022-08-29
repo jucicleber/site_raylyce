@@ -13,7 +13,7 @@ const Navbar = (props) => {
             onClick={() => {
               props.navigationProduto(false);
               props.navigationCarrosel(true);
-              props.navigationAdmministrativo(false);
+              props.navigationLogin(false);
               props.navigationRastreio(false);
               props.navigationFaleConosco(false);
               props.navigationPedido(false);
@@ -23,8 +23,10 @@ const Navbar = (props) => {
             alt=""
           />
         </div>
-
         <div className="col-4 justify-content-end align-items-right p-3">
+          <div className="text-center">
+          <button className="btn-lg btn-outline-info fs-1 me-1 rounded-pill mt-5">Fazer Login ou Cadastrar-se</button>
+        </div>
           <div className="offset-3 d-flex justify-content-end align-items-right p-3">
              <a href="https://www.instagram.com/raylycerecortesalaser/">
             <i className="bi bi-instagram fs-1 text-danger"></i>
@@ -75,7 +77,7 @@ const Navbar = (props) => {
                   onClick={() => {
                     props.navigationProduto(true);
                     props.navigationCarrosel(false);
-                    props.navigationAdmministrativo(false);
+                    props.navigationLogin(false);
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(false);
                     props.navigationPedido(false);
@@ -90,7 +92,7 @@ const Navbar = (props) => {
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
-                    props.navigationAdmministrativo(true);
+                    props.navigationLogin(true);
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(false);
                     props.navigationPedido(false);
@@ -105,7 +107,7 @@ const Navbar = (props) => {
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
-                    props.navigationAdmministrativo(false);
+                    props.navigationLogin(false);
                     props.navigationRastreio(true);
                     props.navigationFaleConosco(false);
                     props.navigationPedido(false);
@@ -120,7 +122,7 @@ const Navbar = (props) => {
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
-                    props.navigationAdmministrativo(false);
+                    props.navigationLogin(false);
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(true);
                     props.navigationPedido(false);
@@ -136,7 +138,7 @@ const Navbar = (props) => {
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
-                    props.navigationAdmministrativo(false);
+                    props.navigationLogin(false);
                     props.navigationRastreio(false);
                     props.navigationFaleConosco(false);
                     props.navigationPedido(true);
