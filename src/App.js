@@ -13,7 +13,8 @@ import PosVendas from "./componente/Produtos/PosVendas";
 import FecharPedido from "./componente/Produtos/FecharPedido"  //chamando o componente FecharPedido
 import Boleto from "./componente/Pagamentos/Boleto"
 import CartaoCredito from "./componente/Pagamentos/CartaoCredito";
-import CartaoDebito from"./componente/Pagamentos/CartaoDebito"
+import CartaoDebito from "./componente/Pagamentos/CartaoDebito"
+import FazerCadastro from "./componente/Administrativo/FazerCadastro"
 
 
 function App() {
@@ -29,7 +30,10 @@ function App() {
   const [navBoleto, setNavBoleto] = useState(false);
   const [navCartaoCredito, setNavCartaoCredito] = useState(false);
   const [navCartaoDebito, setNavCartaoDebito] = useState(false)
+  const [navFazerCadastro, setNavFazerCadastro] = useState(false)
 
+
+  //Caminho para compra de produto
   let limparTela = () => {
     setNavigationC(false);
     setNavigationP(false);
@@ -43,6 +47,7 @@ function App() {
     setNavBoleto(false)
     setNavCartaoCredito(false)
     setNavCartaoDebito(false)
+    setNavFazerCadastro(false)
   }
   appView.CartaoDebito = () => {
     limparTela()
@@ -87,6 +92,13 @@ function App() {
   };
   
  
+  //Fazer cadastro de cliente...
+ 
+
+  appView.FazerCadastro = () => {
+    limparTela()
+    FazerCadastro(true)
+  }
   
 
 
@@ -116,6 +128,7 @@ function App() {
       {navBoleto && <Boleto />}
       {navCartaoCredito && <CartaoCredito />}
       {navCartaoDebito && <CartaoDebito />}
+      {navFazerCadastro && <FazerCadastro />}
       <Footer />
     </div>
   );

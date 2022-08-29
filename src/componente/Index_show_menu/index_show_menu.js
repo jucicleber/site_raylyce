@@ -25,7 +25,14 @@ const Navbar = (props) => {
         </div>
         <div className="col-4 justify-content-end align-items-right p-3">
           <div className="text-center">
-          <button className="btn-lg btn-outline-info fs-1 me-1 rounded-pill mt-5">Fazer Login ou Cadastrar-se</button>
+          <button className="btn-lg btn-outline-info fs-1 me-1 rounded-pill mt-5"  onClick={() => {
+                    props.navigationProduto(false);
+                    props.navigationCarrosel(false);
+                    props.navigationLogin(true);
+                    props.navigationRastreio(false);
+                    props.navigationFaleConosco(false);
+                    props.navigationPedido(false);
+                  }}>Fazer Login ou Cadastrar-se</button>
         </div>
           <div className="offset-3 d-flex justify-content-end align-items-right p-3">
              <a href="https://www.instagram.com/raylycerecortesalaser/">
@@ -73,7 +80,7 @@ const Navbar = (props) => {
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <button
-                  className=" btn btn-outline-primary fs-1 me-1 rounded-pill"
+                  className=" btn btn-outline-primary fs-1 me-0 rounded-pill"
                   onClick={() => {
                     props.navigationProduto(true);
                     props.navigationCarrosel(false);
@@ -87,23 +94,10 @@ const Navbar = (props) => {
                 </button>
               </li>
               <li className="nav-item">
-                <button
-                  className=" btn btn-outline-danger fs-1 me-1 rounded-pill"
-                  onClick={() => {
-                    props.navigationProduto(false);
-                    props.navigationCarrosel(false);
-                    props.navigationLogin(true);
-                    props.navigationRastreio(false);
-                    props.navigationFaleConosco(false);
-                    props.navigationPedido(false);
-                  }}
-                >
-                  Login
-                </button>
               </li>
               <li className="nav-item">
                 <button
-                  className="btn btn-outline-warning fs-1 me-1 rounded-pill"
+                  className="btn btn-outline-warning fs-1 me-4 rounded-pill"
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
@@ -118,7 +112,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item">
                 <button
-                  className=" btn btn-outline-info fs-1 me-1 rounded-pill"
+                  className=" btn btn-outline-info fs-1 me-5 rounded-pill"
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
@@ -134,7 +128,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item">
                 <button
-                  className=" btn btn-outline-success fs-1 me-1 rounded-pill"
+                  className=" btn btn-outline-success fs-1 me-5 rounded-pill"
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);

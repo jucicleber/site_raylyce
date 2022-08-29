@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import appView from "../../AppView";
 import RegisterProduct from "./registerProduct";
 
 
@@ -44,7 +45,7 @@ const Login = (props) => {
           >
             Enviar
           </button>
-         <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5">Fazer Cadastro</button>
+         <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5" onClick={() => appView.FazerCadastro()}>Fazer Cadastro</button>
         </form>
       ) : (
           <RegisterProduct />
