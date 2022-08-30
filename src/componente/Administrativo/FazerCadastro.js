@@ -1,7 +1,6 @@
 import React from "react";
-import appView from "../../AppView";
 
-const FazerCadastro = () => {
+function FazerCadastro() {
     return (
         <div className="card col-12"> 
             <h1 className="mb-5">Cadastro de Cliente</h1>

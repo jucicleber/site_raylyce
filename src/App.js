@@ -10,11 +10,11 @@ import Pedido from "./componente/pedido/pedido";
 import appView from "./AppView";
 import Vendas from "./componente/Produtos/Vendas";
 import PosVendas from "./componente/Produtos/PosVendas";
-import FecharPedido from "./componente/Produtos/FecharPedido"  //chamando o componente FecharPedido
-import Boleto from "./componente/Pagamentos/Boleto"
+import FecharPedido from "./componente/Produtos/FecharPedido"; //chamando o componente FecharPedido
+import Boleto from "./componente/Pagamentos/Boleto";
 import CartaoCredito from "./componente/Pagamentos/CartaoCredito";
-import CartaoDebito from "./componente/Pagamentos/CartaoDebito"
-import FazerCadastro from "./componente/Administrativo/FazerCadastro"
+import CartaoDebito from "./componente/Pagamentos/CartaoDebito";
+import FazerCadastro from "./componente/Administrativo/FazerCadastro";
 
 
 function App() {
