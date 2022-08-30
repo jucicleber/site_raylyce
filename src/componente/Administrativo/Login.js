@@ -5,6 +5,7 @@ import RegisterProduct from "./registerProduct";
 
 
 
+
 const Login = (props) => {
   const [login, setLogin] = useState(true);
   return (
@@ -45,7 +46,7 @@ const Login = (props) => {
           >
             Enviar
           </button>
-         <button type="button" class="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5" onClick={() => appView.FazerCadastro()}>Fazer Cadastro</button>
+         <button type="submit" className="offset-6 btn btn-lg btn-outline-success me-5 px-5 mb-5" onClick={() => appView.FazerCadastro()}>Fazer Cadastro</button>
         </form>
       ) : (
           <RegisterProduct />

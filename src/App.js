@@ -20,7 +20,7 @@ import FazerCadastro from "./componente/Administrativo/FazerCadastro";
 function App() {
   const [navigationCarrosel, setNavigationC] = useState(true);
   const [navigationProduto, setNavigationP] = useState(false);
-  const [navigationLogin, setLoginL] = useState(false);
+  const [navigationLogin, setNavLoginL] = useState(false);
   const [navigationRastreio, setNavigationR] = useState(false);
   const [navigationFaleConosco, setNavigationF] = useState(false);
   const [navigationPedido, setNavigationPE] = useState(false);
@@ -37,7 +37,7 @@ function App() {
   let limparTela = () => {
     setNavigationC(false);
     setNavigationP(false);
-    setLoginL(false);
+    setNavLoginL(false);
     setNavigationR(false);
     setNavigationF(false);
     setNavigationPE(false);
@@ -48,6 +48,10 @@ function App() {
     setNavCartaoCredito(false)
     setNavCartaoDebito(false)
     setNavFazerCadastro(false)
+  }
+  appView.FazerCadastro = () => {
+    limparTela()
+    FazerCadastro(true)
   }
   appView.CartaoDebito = () => {
     limparTela()
@@ -95,10 +99,7 @@ function App() {
   //Fazer cadastro de cliente...
  
 
-  appView.FazerCadastro = () => {
-    limparTela()
-    FazerCadastro(true)
-  }
+  
   
 
 
@@ -107,7 +108,7 @@ function App() {
       <Navbar
         navigationCarrosel={setNavigationC}
         navigationProduto={setNavigationP}
-        navigationLogin={setLoginL}
+        navigationLogin={setNavLoginL}
         navigationRastreio={setNavigationR}
         navigationFaleConosco={setNavigationF}
         navigationPedido={setNavigationPE}
