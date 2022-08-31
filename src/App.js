@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import Navbar from "../src/componente/Index_show_menu/index_show_menu";
 import Carousel from "../src/componente/carrosel/carrosel";
 import Footer from "../src/componente/footer/footer";
-import Produtos from "./componente/Produtos/Produtos";
-import Login from "./componente/Administrativo/Login";
+import Produtos from "./componente/Produtos/Cliente/Produtos";
+import Login from "./componente/Login/Login";
+import FazerCadastro from "./componente/Login/FazerCadastro";
 import Rastreio from "./componente/rastreio/rastreio";
 import FaleConosco from "./componente/faleConosco/faleConosco";
 import Pedido from "./componente/pedido/pedido";
 import appView from "./AppView";
-import Vendas from "./componente/Produtos/Vendas";
-import PosVendas from "./componente/Produtos/PosVendas";
-import FecharPedido from "./componente/Produtos/FecharPedido"; //chamando o componente FecharPedido
+import Vendas from "./componente/Produtos/Cliente/Vendas";
+import PosVendas from "./componente/Produtos/Cliente/PosVendas";
+import FecharPedido from "./componente/Produtos/Cliente/FecharPedido"; //chamando o componente FecharPedido
 import Boleto from "./componente/Pagamentos/Boleto";
 import CartaoCredito from "./componente/Pagamentos/CartaoCredito";
 import CartaoDebito from "./componente/Pagamentos/CartaoDebito";
-import FazerCadastro from "./componente/Administrativo/FazerCadastro";
+
 
 
 function App() {

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import appView from "../../AppView";
+import appView from "../../../AppView";
 import ItemCarrinho from "./ItemCarrinho";
 
 
