@@ -1,8 +1,8 @@
 import React from "react";
 
-function FazerCadastro() {
+function FazerCadastro () {
     return (
-        <div className="card col-12"> 
+        <div className="card col-6 container d-flex"> 
             <h1 className="mb-5">Cadastro de Cliente</h1>
             <h3>Nome</h3>
              <input
@@ -44,7 +44,6 @@ function FazerCadastro() {
         className="col-6 offset-3 btn btn-outline-primary me-5 px-5 mb-5 mt-5"
         align="center"
         type="button"
-               
       >
         Enviar
       </button>

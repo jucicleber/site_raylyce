@@ -51,7 +51,7 @@ function App() {
   }
   appView.FazerCadastro = () => {
     limparTela()
-    FazerCadastro(true)
+    setNavFazerCadastro(true)
   }
   appView.CartaoDebito = () => {
     limparTela()
