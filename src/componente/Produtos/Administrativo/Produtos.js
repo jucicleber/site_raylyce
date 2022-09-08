@@ -12,6 +12,10 @@ const Produto = (props) => {
         className="card-img-top"
         alt="imagem do produto"
       />
+      <div>
+          <button className="rounded-pill mb-5 mt-5 w-50 p-3 btn-outline-warning">Editar Produto</button>
+          <button className="rounded-pill mb-5 mt-5 w-50 p-3 btn-outline-danger">Excluir Produto</button>
+      </div>
       <div className="card-body">
         <h2 className="card-title">{props.produto.nome}</h2>
         <p className="card-text">
@@ -38,11 +42,12 @@ const Produtos = (props) => {
         <div className="row">
           
            <button
-            className="btn btn-primary offset-4 btn-lg col-md-3  mt-5"
+            className="btn btn-primary btn-lg col-md-3  mt-5"
             type="submit"
           >
             Pesquisar
           </button>
+          <button className=" btn btn-primary btn-lg col-md-3 offset-md-4 mt-5"> Adicionar Produto</button>
         </div>
        
         {catalogo.produtos.map((prod) => (

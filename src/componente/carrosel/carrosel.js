@@ -20,7 +20,9 @@ const Carousel = () => {
 
       {/* <!-- Wrapper for slides --> */}
       <div className="carousel-inner">
+         
         <div className="item active ">
+         
           <p id="pChaveiro">Chaveiros Personalizados, faça seu pedido.</p>
           <img
             src={chaveiro}

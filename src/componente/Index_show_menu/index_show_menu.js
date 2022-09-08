@@ -112,7 +112,7 @@ const Navbar = (props) => {
               </li>
               <li className="nav-item">
                 <button
-                  className=" btn btn-outline-info fs-1 me-5 rounded-pill"
+                  className="btn btn-outline-info fs-1 me-5 rounded-pill"
                   onClick={() => {
                     props.navigationProduto(false);
                     props.navigationCarrosel(false);
