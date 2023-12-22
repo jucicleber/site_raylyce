@@ -12,4 +12,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  /* color: red;  teste feito, apagar depois*/
+  background-color: white;
 }
